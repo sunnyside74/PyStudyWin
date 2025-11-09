@@ -20,7 +20,9 @@ class ClassMyWindow:
         self.a = self.dlg.spinBox_1.value()
         self.b = self.dlg.spinBox_2.value()
 
-        self.dlg.lineEdit.setText(self.a + self.b)
+        self.strAnswer = str(self.a + self.b)
+
+        self.dlg.lineEdit.setText(self.strAnswer)
         
 
 app = QApplication(sys.argv)
