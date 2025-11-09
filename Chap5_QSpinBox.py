@@ -7,7 +7,7 @@ import sys
 # xml --> 객체로 변환
 class ClassMyWindow:
     def __init__(self):
-        self.dlg = loadUi('Chap5_UI.ui')
+        self.dlg = loadUi('UI_Chap5_QSpinBox.ui')
         self.dlg.pushButton.clicked.connect( self.btnClick ) 		# Event 등록 -> 콘솔에 출력됨
         self.dlg.show()		# dialog 창을 생성함
         

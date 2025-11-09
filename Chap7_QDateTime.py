@@ -1,31 +1,20 @@
-# Exam 1
-# Spin입력 1과
+# CHAP7 QDateTime Class 사용법
+# 
 
 from PyQt5.QtWidgets import *
+from PyQt5.QtCore import QDate
 from PyQt5.uic import loadUi
 import sys
 
 # xml --> 객체로 변환
 class ClassMyWindow:
     def __init__(self):
-        self.dlg = loadUi('UI_Chap6_Exam1.ui')
+        self.dlg = loadUi('Exam1.ui')
         self.dlg.pushButton.clicked.connect( self.btnClick ) 		# Event 등록 -> 콘솔에 출력됨
         self.dlg.show()		# dialog 창을 생성함
         
     # Button Click Event Function
     def btnClick(self):
-        # self.dlg.lineEdit.setText("헬로 파이썬")
-        self.dlg.lineEdit.clear()
-
-        # self.a = self.dlg.spinBox_1.value()
-        # self.b = self.dlg.spinBox_2.value()
-        a = self.dlg.spinBox_1.value()
-        b = self.dlg.spinBox_2.value()
-
-        # self.strAnswer = str(self.a + self.b)
-
-        # self.dlg.lineEdit.setText(self.strAnswer)
-        self.dlg.lineEdit.setText(str(a+b))
         
 
 app = QApplication(sys.argv)
